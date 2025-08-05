@@ -56,8 +56,8 @@ input[type="text"] {
 
 /* Card */
 .game-card {
-  background-color: #174ea6aa; /* semi-transparent blue */
-  padding: 20px;
+  background-color: #00841d; /* semi-transparent blue */
+  padding: 50px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -76,7 +76,7 @@ input[type="text"] {
   padding: 10px;
   border-radius: 6px;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 /* Avatar section */
@@ -99,24 +99,55 @@ input[type="text"] {
   cursor: pointer;
 }
 
+.arrow:hover {
+  transform: scale(1.2);
+}
+
 /* Buttons */
 .play-btn {
-  background-color: #4caf50;
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
+  background-color: #ffffff;
+  color: #00841d;
+  font-size: 18px;
   padding: 10px 40px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.play-btn:hover {
+  background-color: rgba(214, 214, 214, 0.931);
+  transform: scale(1.08);
+}
+
+.play-btn:active {
+  background-color: #b7b7b7d2;
 }
 
 .private-btn {
-  background-color: #3498db;
-  color: white;
+  background-color: #ffffff;
+  color: #00841d;
   font-size: 18px;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.private-btn:hover {
+  background-color: rgba(214, 214, 214, 0.931);
+  transform: scale(1.08);
+}
+
+.private-btn:active {
+  background-color: #b7b7b7d2;
 }

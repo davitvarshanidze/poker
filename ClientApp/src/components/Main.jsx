@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import debounce from '../helpers/debounce';
 import './Main.css'
 import avatar1 from "../avatars/avatar1.png";
@@ -41,8 +42,8 @@ const Main = () => {
                         </button>
                     </div>
 
-                    <button className="play-btn">Play with bots</button>
-                    <button className="private-btn">Play with friends</button>
+                    <Link className="play-btn" to="/Bots">Play with bots</Link>
+                    <Link className="private-btn" to="/Friends">Play with friends</Link>
                 </div>
             </div>
         </div>
